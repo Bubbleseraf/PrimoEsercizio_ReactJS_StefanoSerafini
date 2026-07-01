@@ -1,0 +1,17 @@
+.titolo {
+  color: #2b6cb0;
+  font-size: 2.5rem;
+}
+
+.etichetta {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.campo-input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  width: 250px;
+}
