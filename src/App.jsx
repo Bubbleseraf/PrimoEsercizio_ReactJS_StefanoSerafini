@@ -2,6 +2,8 @@ import './index.css'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
 import List from './components/List'
+import Counter from './components/Counter'
+import Form from './components/Form'
 
 function App() {
   const nomi = ['Marco', 'Giulia', 'Luca', 'Sara']
@@ -22,6 +24,8 @@ function App() {
       />
 
       <List names={nomi} />
+      <Counter />
+      <Form />
     </div>
   )
 }
