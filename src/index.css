@@ -79,3 +79,11 @@
   background-color: #f9f9f9;
   width: fit-content;
 }
+
+.loading-data {
+  margin-top: 2rem;
+}
+
+.loading-data ul {
+  margin-top: 1rem;
+}

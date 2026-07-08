@@ -4,6 +4,7 @@ import Header from './components/Header'
 import List from './components/List'
 import Counter from './components/Counter'
 import Form from './components/Form'
+import LoadingData from './components/LoadingData'
 
 function App() {
   const nomi = ['Marco', 'Giulia', 'Luca', 'Sara']
@@ -12,6 +13,7 @@ function App() {
     <div className="container">
     <Navbar />
     <Header />
+    <LoadingData />
     
     <label htmlFor="nome" className="etichetta">
     Il tuo nome:
