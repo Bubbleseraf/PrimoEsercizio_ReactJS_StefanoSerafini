@@ -1,43 +1,23 @@
+import { BrowserRouter, Routes, Route } from 'react-router'
 import './index.css'
 import Navbar from './components/Navbar'
-import Header from './components/Header'
-import List from './components/List'
-import Counter from './components/Counter'
-import Form from './components/Form'
-import LoadingData from './components/LoadingData'
+import Home from './pages/Home'
+import Posts from './pages/Posts'
+import PostDetail from './pages/PostDetail'
 
 function App() {
-  const nomi = ['Marco', 'Giulia', 'Luca', 'Sara']
-  
   return (
-    <div className="container">
-    <Navbar />
-    <Header />
-    <LoadingData />
-    
-    <label htmlFor="nome" className="etichetta">
-    Il tuo nome:
-    </label>
-    <input
-    type="text"
-    id="nome"
-    className="campo-input"
-    placeholder="Scrivi qui..."
-    />
-    
-    <List>
-    {nomi.map((nome, index) => (
-      <List.Item key={index}>{nome}</List.Item>
-    ))}
-    </List>
-    <Counter />
-    <Form>
-    <Form.Input name="nome" label="Nome:" />
-    <Form.Input name="email" label="Email:" type="email" />
-    <Form.Button>Invia</Form.Button>
-    <Form.Card />
-    </Form>
-    </div>
+    <BrowserRouter>
+      <div className="container">
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/posts" element={<Posts />} />
+          <Route path="/posts/:id" element={<PostDetail />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
 

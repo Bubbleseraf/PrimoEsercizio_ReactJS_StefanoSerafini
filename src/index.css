@@ -16,7 +16,6 @@
   width: 250px;
 }
 
-
 .navbar {
   position: fixed;
   top: 0;
@@ -26,6 +25,7 @@
   gap: 1.5rem;
   padding: 1rem;
   background-color: #2b6cb0;
+  z-index: 10;
 }
 
 .nav-link {
@@ -34,14 +34,12 @@
   font-weight: bold;
 }
 
-
 .header {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 .lista {
   list-style: none;
@@ -67,10 +65,6 @@
   margin-top: 2rem;
 }
 
-.form-container div {
-  margin-bottom: 0.8rem;
-}
-
 .card {
   margin-top: 1rem;
   padding: 1rem;
@@ -84,6 +78,11 @@
   margin-top: 2rem;
 }
 
-.loading-data ul {
-  margin-top: 1rem;
+.container {
+  padding-top: 4rem;
+}
+
+.posts-container,
+.post-detail {
+  padding: 1rem 2rem;
 }
